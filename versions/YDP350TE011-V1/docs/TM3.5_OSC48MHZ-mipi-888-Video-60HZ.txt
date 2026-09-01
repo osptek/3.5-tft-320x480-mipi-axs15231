@@ -1,0 +1,690 @@
+En18V(1);
+Delay(100);	
+EnVCI(1);
+Delay(100);	
+EnBLT(1);	
+	
+Delay(100);	
+	
+RESET(1);	
+Delay(5);	
+RESET(0);	
+Delay(5);	
+RESET(1);	
+Delay(20);	
+
+
+	
+loadWidthSet(320);	
+loadHeightSet(480);	
+loadHBPSet(166);	
+loadVBPSet(19);	
+loadHFPSet(168);	
+loadVFPSet(50);	
+loadHSWSet(38);	
+loadVSWSet(50);	
+loadDCLKSet(25);	
+loadInvVsync(0);	
+loadInvHsync(0);	
+loadInvDCLK(0);	
+loadInvDE(0);	
+loadLanes(0);	
+loadRefreshMode(0);	
+loadOutFormat(0);	
+loadSwapRGB(0);	
+loadHSCLK(597);	
+loadScreenType(0);	
+loadCompressionType(0);	
+////////// LCD init code ///////////////////	
+	
+DataType(0x29);
+WriteAddr(0xBB);
+WriteData(0x00);//0	
+WriteData(0x00);//1	
+WriteData(0x00);//2	
+WriteData(0x00);//3	
+WriteData(0x00);//4	
+WriteData(0x00);//5	
+WriteData(0x5A);//6	
+WriteData(0xA5);//7	
+	
+DataType(0x29);
+WriteAddr(0xA0);
+WriteData(0x00);//0	
+WriteData(0x10);//1	
+WriteData(0x00);//2	
+WriteData(0x02);//3	
+WriteData(0x00);//4	
+WriteData(0x00);//5	
+WriteData(0x0c);//6	
+WriteData(0x3F);//7 	
+WriteData(0x00);//8	
+WriteData(0x05);//9	
+WriteData(0x00);//10	
+WriteData(0x00);//11	
+WriteData(0x00);//12	
+WriteData(0x00);//13	
+WriteData(0x00);//14	
+WriteData(0x00);//15	
+WriteData(0x00);//16	
+	
+
+DataType(0x29);
+WriteAddr(0xA2);
+WriteData(0x20);//0	0x21 bist
+WriteData(0x32);//1	
+WriteData(0x26);//2	
+WriteData(0x14);//3	
+WriteData(0xA6);//4	
+WriteData(0x30);//5	
+WriteData(0xA8);//6	
+WriteData(0xE0);//7	
+WriteData(0x68);//8	
+WriteData(0x10);//9	
+WriteData(0x80);//10	
+WriteData(0x80);//11	
+WriteData(0x80);//12	
+WriteData(0x20);//13	
+WriteData(0xf9);//14	
+WriteData(0x10);//15	
+WriteData(0x02);//16	
+WriteData(0xff);//17	
+WriteData(0xff);//18	
+WriteData(0xF0);//19	
+WriteData(0x90);//20	
+WriteData(0x01);//21	
+WriteData(0x32);//22	
+WriteData(0xA0);//23	
+WriteData(0x81);//24	
+WriteData(0xE0);//25	
+WriteData(0x20);//26	
+WriteData(0x7F);//27	
+WriteData(0xFF);//28	
+WriteData(0x00);//29	
+WriteData(0x04);//30	
+
+	
+DataType(0x29);
+WriteAddr(0xA3);	
+WriteData(0xA0);//0	
+WriteData(0x06);//1	
+WriteData(0xAa);//2	
+WriteData(0x00);//3
+WriteData(0x0A);//4	
+WriteData(0xAA);//5	
+WriteData(0x2A);//6	
+WriteData(0x04);//7	
+WriteData(0x04);//8	
+WriteData(0x04);//9	
+WriteData(0x04);//10	
+WriteData(0x04);//11	
+WriteData(0x04);//12	
+WriteData(0x04);//13	
+WriteData(0x04);//14	
+WriteData(0x04);//15	
+WriteData(0x04);//16	
+WriteData(0x04);//17	
+WriteData(0x04);//18	
+WriteData(0x55);//19	
+WriteData(0x55);//20	
+WriteData(0xAA);//21	
+WriteData(0x00);//22	
+WriteData(0x00);//23	
+WriteData(0x00);//24	
+WriteData(0x40);//25
+WriteData(0x01);//26
+		
+DataType(0x29);
+WriteAddr(0xC1);
+WriteData(0x31);//0	
+WriteData(0x04);//1	
+WriteData(0x02);//2	
+WriteData(0x02);//3	
+WriteData(0x71);//4	
+WriteData(0x05);//5	
+WriteData(0x24);//6	
+WriteData(0x55);//7	
+WriteData(0x70);//8	
+WriteData(0x00);//9	
+WriteData(0x01);//10	
+WriteData(0x00);//11	
+
+Delay(100);
+	
+DataType(0x29);
+WriteAddr(0xC1);
+WriteData(0x31);//0	
+WriteData(0x04);//1	
+WriteData(0x02);//2	
+WriteData(0x02);//3	
+WriteData(0x71);//4	
+WriteData(0x05);//5	
+WriteData(0x24);//6	
+WriteData(0x55);//7	
+WriteData(0x70);//8	
+WriteData(0x00);//9	
+WriteData(0x01);//10	
+WriteData(0x00);//11	
+WriteData(0x53);//12	
+WriteData(0xFF);//13	
+WriteData(0xFF);//14	
+WriteData(0xFF);//15	
+WriteData(0x4F);//16	
+WriteData(0x52);//17	
+WriteData(0x00);//18	
+WriteData(0x4F);//19	
+WriteData(0x52);//20	
+WriteData(0x00);//21	
+WriteData(0x55);//22	
+WriteData(0x3B);//23	
+WriteData(0x0B);//24	
+WriteData(0x02);//25	
+WriteData(0x0d);//26	
+WriteData(0x00);//27	
+WriteData(0xFF);//28	
+WriteData(0x40);//29	
+	
+DataType(0x29);
+WriteAddr(0xC3);
+WriteData(0x00);//0	
+WriteData(0x00);//1	
+WriteData(0x00);//2	
+WriteData(0x50);//3	
+WriteData(0x03);//4	
+WriteData(0x00);//5	
+WriteData(0x00);//6	
+WriteData(0x00);//7	
+WriteData(0x01);//8	
+WriteData(0x80);//9	
+WriteData(0x03);//10	
+	
+DataType(0x29);
+WriteAddr(0xC4);
+WriteData(0x24);//0 
+WriteData(0x37);//1
+WriteData(0x64);//2
+WriteData(0x32);//3
+WriteData(0x14);//4
+WriteData(0x64);//5
+WriteData(0xc8);//6
+WriteData(0xfa);//7
+WriteData(0x02);//8
+WriteData(0x90);//9
+WriteData(0x01);//10
+WriteData(0x1e);//11
+WriteData(0xdc);//12
+WriteData(0xfa);//13
+WriteData(0x00);//14
+WriteData(0x00);//15
+WriteData(0x44);//16
+WriteData(0x50);//17
+WriteData(0xdd);//18
+WriteData(0x00);//19
+
+	
+DataType(0x29);
+WriteAddr(0xC5);
+WriteData(0x18);	//0
+WriteData(0x00);	//1
+WriteData(0x80);	//2
+WriteData(0x03);	//3
+WriteData(0xFE);	//4
+WriteData(0x03);	//5 
+WriteData(0x18);	//6 
+WriteData(0x20);	//7 
+WriteData(0x00);	//8
+WriteData(0x00);	//9
+WriteData(0x88);	//10
+WriteData(0xDE);	//11
+WriteData(0x0D);	//12
+WriteData(0x08);	//13
+WriteData(0x0F);	//14
+WriteData(0x0F);	//15
+WriteData(0x01);	//16
+WriteData(0x03);	//17 
+WriteData(0x18);	//18 
+WriteData(0x20);	//19 
+WriteData(0x00);	//20
+WriteData(0x00);	//21
+WriteData(0x00);	//22
+
+	
+DataType(0x29);
+WriteAddr(0xC6);
+WriteData(0x05);//0	
+WriteData(0x0A);//1	
+WriteData(0x05);//2	
+WriteData(0x0A);//3	
+WriteData(0x00);//4	
+WriteData(0xE0);//5	
+WriteData(0x2E);//6	
+WriteData(0x0B);//7	
+WriteData(0x12);//8	
+WriteData(0x22);//9	
+WriteData(0x12);//10	
+WriteData(0x22);//11	
+WriteData(0x01);//12	
+WriteData(0x03);//13	
+WriteData(0x00);//14	
+WriteData(0x02);//15	
+WriteData(0x6A);//16	
+WriteData(0x18);//17	
+WriteData(0xC8);//18	
+WriteData(0x22);//19	
+
+	
+DataType(0x29);
+WriteAddr(0xC7);
+WriteData(0x50);//0	
+WriteData(0x32);//1	
+WriteData(0x28);//2	
+WriteData(0x00);//3	
+WriteData(0xa0);//4	
+WriteData(0x80);//5	
+WriteData(0x8f);//6	
+WriteData(0x00);//7	
+WriteData(0x80);//8	
+WriteData(0xff);//9	
+WriteData(0x07);//10	
+WriteData(0x11);//11	
+WriteData(0x9c);//12	
+WriteData(0x67);//13	
+WriteData(0xff);//14	
+WriteData(0x22);//15	
+WriteData(0x0c);//16	
+WriteData(0x0d);//17	
+WriteData(0x0e);//18	
+WriteData(0x0f);//19	
+
+DataType(0x29);
+WriteAddr(0xC8);
+WriteData(0x80);//0
+WriteData(0x4F);//1
+WriteData(0xea);//2
+WriteData(0x80);//3
+WriteData(0xfe);//4
+WriteData(0x10);//5
+WriteData(0x10);//6
+WriteData(0x00);//7
+WriteData(0x0a);//8
+	
+DataType(0x29);
+WriteAddr(0xC9);
+WriteData(0x33);//0	
+WriteData(0x44);//1	
+WriteData(0x44);//2	
+WriteData(0x01);//3
+	
+	
+DataType(0x29);
+WriteAddr(0xCF);
+WriteData(0x00);//0	
+WriteData(0x00);//1	
+WriteData(0x88);//2	
+WriteData(0x58);//3	
+WriteData(0x10);//4	
+WriteData(0x18);//5	
+WriteData(0x56);//6	
+WriteData(0x18);//7	
+WriteData(0x1e);//8	
+WriteData(0x08);//9	
+WriteData(0xa0);//10	
+WriteData(0x6A);//11	
+WriteData(0xD4);//12	
+WriteData(0x22);//13	
+WriteData(0x4c);//14	
+WriteData(0x0c);//15	
+WriteData(0x77);//16	
+WriteData(0x22);//17	
+WriteData(0x44);//18	
+WriteData(0x04);//19	
+WriteData(0x04);//20	
+WriteData(0x32);//21	
+WriteData(0xa0);//22	
+WriteData(0xc8);//23	
+WriteData(0xB1);//24	
+WriteData(0x26);//25	
+WriteData(0xE0);//26	
+WriteData(0x70);//27
+WriteData(0x00);//28	
+
+	
+DataType(0x29);
+WriteAddr(0xD0);
+WriteData(0xE0);	//0
+WriteData(0x40);	//1
+WriteData(0x11);	//2
+WriteData(0x24);	//3
+WriteData(0x08);	//4
+WriteData(0x05);	//5
+WriteData(0x10);	//6
+WriteData(0x0D);	//7
+
+WriteData(0x92);	//8
+WriteData(0x14);	//9
+
+WriteData(0xC2);	//10 
+WriteData(0x42);	//11 
+WriteData(0x62);	//12
+WriteData(0x22);	//13
+WriteData(0xAA);	//14
+WriteData(0x03);	//15
+WriteData(0x10);	//16
+WriteData(0x12);	//17
+WriteData(0x60);	//18 
+WriteData(0x14);	//19 
+WriteData(0x1E);	//20 
+WriteData(0x51);	//21
+WriteData(0x15);	//22
+WriteData(0x00);	//23
+WriteData(0x80);	//24 
+WriteData(0x20);	//25 
+WriteData(0x00);	//26
+WriteData(0x07);	//27
+WriteData(0x0D);	//28
+WriteData(0x12);	//29
+	
+DataType(0x29);
+WriteAddr(0xD5);
+WriteData(0x55);	//0 
+WriteData(0x55);	//1 
+WriteData(0x89);	//2 
+WriteData(0x0E);	//3 
+WriteData(0x35);	//4 
+WriteData(0x03);	//5 
+
+WriteData(0x7E);	//6 
+WriteData(0x82);	//7 
+WriteData(0x00);	//8 
+
+WriteData(0x83);	//9  
+WriteData(0x7F);	//10 
+WriteData(0x00);	//11 
+WriteData(0x08);	//12 
+WriteData(0x6A);	//13
+WriteData(0x00);	//14 
+WriteData(0x46);	//15 
+WriteData(0x60);	//16
+WriteData(0x25);	//17
+WriteData(0x25);	//18
+WriteData(0x60);	//19
+WriteData(0x86);	//20 
+WriteData(0x01);	//21
+WriteData(0x03);	//22
+WriteData(0x00);	//23
+WriteData(0xE0);	//24 
+WriteData(0x51);	//25 
+WriteData(0x8B);	//26 
+WriteData(0x25);	//27 
+WriteData(0x55);	//28 
+WriteData(0x00);	//29
+	
+DataType(0x29);
+WriteAddr(0xD6);
+WriteData(0x10);	//0
+WriteData(0x32);	//1
+WriteData(0x54);	//2
+WriteData(0x76);	//3
+WriteData(0x98);	//4
+WriteData(0xBA);	//5
+WriteData(0xDC);	//6
+WriteData(0xFE);	//7
+WriteData(0x13);	//8 
+WriteData(0x04);	//9 
+WriteData(0x01);	//10
+WriteData(0x01);	//11
+WriteData(0x35);	//12 
+WriteData(0x35);	//13 
+WriteData(0x00);	//14 
+WriteData(0x35);	//15 
+WriteData(0x35);	//16 
+WriteData(0x00);	//17 
+WriteData(0x03);	//18
+WriteData(0x03);	//19
+WriteData(0x03);	//20
+WriteData(0x03);	//21
+WriteData(0x30);	//22 
+WriteData(0x30);	//23 
+WriteData(0x00);	//24
+WriteData(0x83);	//25
+WriteData(0x00);	//26
+WriteData(0x23);	//27 
+WriteData(0x01);	//28
+WriteData(0x00);	//29
+	
+	
+DataType(0x29);
+WriteAddr(0xD7);
+WriteData(0x00);	//0  
+WriteData(0x02);	//1  
+WriteData(0x1E);	//2  
+WriteData(0x08);	//3  
+WriteData(0x0A);	//4  
+WriteData(0x0C);	//5  
+WriteData(0x0E);	//6  
+WriteData(0x1F);	//7  
+WriteData(0x1F);	//8  
+WriteData(0x18);	//9  
+WriteData(0x18);	//10 
+WriteData(0x1E);	//11 
+WriteData(0x55);	//12
+WriteData(0x55);	//13
+WriteData(0x04);	//14
+WriteData(0x00);	//15
+WriteData(0x19);	//16 
+WriteData(0x82);	//17 
+WriteData(0x1F);
+
+
+DataType(0x29);
+WriteAddr(0xD8);
+WriteData(0x01);	//0  
+WriteData(0x03);	//1  
+WriteData(0x1E);	//2  
+WriteData(0x09);	//3  
+WriteData(0x0B);	//4  
+WriteData(0x0D);	//5  
+WriteData(0x0F);	//6  
+WriteData(0x1F);	//7  
+WriteData(0x1F);	//8  
+WriteData(0x19);	//9  
+WriteData(0x19);	//10 
+WriteData(0x1E);	//11 
+	
+
+
+
+
+	
+DataType(0x29);
+WriteAddr(0xDF);
+WriteData(0x44);//0	
+WriteData(0x03);//1	
+WriteData(0x4B);//2	
+WriteData(0x00);//3	
+WriteData(0x00);//4	
+WriteData(0x8B);//5	
+WriteData(0x42);//6	
+WriteData(0x22);//7	
+
+
+DataType(0x29);
+WriteAddr(0xE0);
+WriteData(0x00);//0  
+WriteData(0x00);//1  
+WriteData(0x09);//2  
+WriteData(0x0f);//3  
+WriteData(0x0c);//4  
+WriteData(0x09);//5  
+WriteData(0x12);//6  
+WriteData(0x24);//7  
+WriteData(0x44);//8  
+WriteData(0x1e);//9  
+WriteData(0x0c);//10 
+WriteData(0x13);//11 
+WriteData(0x11);//12 
+WriteData(0x2e);//13 
+WriteData(0x33);//14 
+WriteData(0x0F);//15 
+WriteData(0x00);//16 
+	            
+DataType(0x29);
+WriteAddr(0xE1);
+WriteData(0x00);//0  
+WriteData(0x00);//1  
+WriteData(0x09);//2  
+WriteData(0x0f);//3  
+WriteData(0x0d);//4  
+WriteData(0x09);//5  
+WriteData(0x12);//6  
+WriteData(0x24);//7  
+WriteData(0x44);//8  
+WriteData(0x1e);//9  
+WriteData(0x0c);//10 
+WriteData(0x13);//11 
+WriteData(0x11);//12 
+WriteData(0x2e);//13 
+WriteData(0x33);//14 
+WriteData(0x0F);//15 
+WriteData(0x00);//16 
+
+DataType(0x29);
+WriteAddr(0xE2);
+WriteData(0x3B);//0	
+WriteData(0x07);//1	
+WriteData(0x12);//2	
+WriteData(0x18);//3	
+WriteData(0x0E);//4	
+WriteData(0x0D);//5	
+WriteData(0x17);//6	
+WriteData(0x35);//7	
+WriteData(0x44);//8	
+WriteData(0x32);//9	
+WriteData(0x0C);//10
+WriteData(0x14);//11
+WriteData(0x14);//12
+WriteData(0x36);//13
+WriteData(0x3A);//14
+WriteData(0x2F);//15
+WriteData(0x0D);//16
+	
+DataType(0x29);
+WriteAddr(0xE3);
+WriteData(0x37);//0	
+WriteData(0x07);//1	
+WriteData(0x12);//2	
+WriteData(0x18);//3	
+WriteData(0x0E);//4	
+WriteData(0x0D);//5	
+WriteData(0x17);//6	
+WriteData(0x35);//7	
+WriteData(0x44);//8	
+WriteData(0x32);//9	
+WriteData(0x0C);//10
+WriteData(0x14);//11
+WriteData(0x14);//12
+WriteData(0x36);//13
+WriteData(0x32);//14
+WriteData(0x2F);//15
+WriteData(0x0F);//16
+	
+DataType(0x29);
+WriteAddr(0xE4);
+WriteData(0x3B);//0	
+WriteData(0x07);//1	
+WriteData(0x12);//2	
+WriteData(0x18);//3	
+WriteData(0x0E);//4	
+WriteData(0x0D);//5	
+WriteData(0x17);//6	
+WriteData(0x39);//7	
+WriteData(0x44);//8	
+WriteData(0x2E);//9	
+WriteData(0x0C);//10
+WriteData(0x14);//11
+WriteData(0x14);//12
+WriteData(0x36);//13
+WriteData(0x3A);//14
+WriteData(0x2F);//15
+WriteData(0x0D);//16
+	
+DataType(0x29);
+WriteAddr(0xE5);
+WriteData(0x37);//0	
+WriteData(0x07);//1	
+WriteData(0x12);//2	
+WriteData(0x18);//3	
+WriteData(0x0E);//4	
+WriteData(0x0D);//5	
+WriteData(0x17);//6	
+WriteData(0x39);//7	
+WriteData(0x44);//8	
+WriteData(0x2E);//9	
+WriteData(0x0C);//10
+WriteData(0x14);//11
+WriteData(0x14);//12
+WriteData(0x36);//13
+WriteData(0x3A);//14
+WriteData(0x2F);//15
+WriteData(0x0F);//16
+	
+DataType(0x05);
+WriteAddr(0x11);
+Delay(200);
+
+
+DataType(0x05);
+WriteAddr(0x29);
+Delay(100);
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
