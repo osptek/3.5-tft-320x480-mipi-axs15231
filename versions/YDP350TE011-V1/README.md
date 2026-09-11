@@ -17,7 +17,6 @@
 
 - [产品简介](#产品简介)
 - [规格参数](#规格参数)
-- [示例工程](#示例工程)
 - [仓库结构](#仓库结构)
 - [相关资料](#相关资料)
 - [购买链接](#购买链接)
@@ -46,16 +45,6 @@ OSPTEK **3.5 寸 320×480 TFT** 是一款 **MIPI** 接口彩色显示模组，�
 
 > 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
 
-## 示例工程
-
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-P4 · AXS15231E MIPI + LVGL9 | [`examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/`](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/) |
-| ESP32-P4 · AXS15231E MIPI + LVGL9 · PPA 横屏 | [`examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/`](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/) |
-| Raspberry Pi 5 · AXS15231E 320×480 面板驱动 / DT overlay（仅显示） | [`examples/rpi5-panel-axs15231e-320x480/`](./examples/rpi5-panel-axs15231e-320x480/) |
-| Raspberry Pi 5 · AXS15231E 320×480 面板驱动 + 触摸 / DT overlay | [`examples/rpi5-panel-axs15231e-touch-320x480/`](./examples/rpi5-panel-axs15231e-touch-320x480/) |
-| Raspberry Pi 5 · AXS15231E 320×480 LVGL 演示 | [`examples/rpi5-lvgl-axs15231e-320x480/`](./examples/rpi5-lvgl-axs15231e-320x480/) |
-
 ## 仓库结构
 
 ```text
@@ -80,14 +69,6 @@ OSPTEK **3.5 寸 320×480 TFT** 是一款 **MIPI** 接口彩色显示模组，�
 | 驱动 IC 数据手册（AXS15231E） | [`docs/AXS15231E_Datasheet_V0.3.pdf`](./docs/AXS15231E_Datasheet_V0.3.pdf) |
 | 初始化序列（文本） | [`docs/TM3.5_OSC48MHZ-mipi-888-Video-60HZ.txt`](./docs/TM3.5_OSC48MHZ-mipi-888-Video-60HZ.txt) |
 | RGB 时序参考图 | [`docs/rgb-timing-320x480.png`](./docs/rgb-timing-320x480.png) |
-
-### 示例工程
-
-- [ESP32-P4 AXS15231E MIPI + LVGL9](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/)
-- [ESP32-P4 AXS15231E MIPI + LVGL9 · PPA 横屏](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/)
-- [Raspberry Pi 5 面板驱动（仅显示）](./examples/rpi5-panel-axs15231e-320x480/)
-- [Raspberry Pi 5 面板驱动 + 触摸](./examples/rpi5-panel-axs15231e-touch-320x480/)
-- [Raspberry Pi 5 LVGL 演示](./examples/rpi5-lvgl-axs15231e-320x480/)
 
 ## 购买链接
 

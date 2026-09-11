@@ -23,6 +23,9 @@ venv/
 # IDE（按需删除：若需提交 .vscode 团队配置，请删掉下面两行）
 .idea/
 
+# 本地未上架例程（目录名 wip-*，不提交）
+**/wip-*/
+
 # 编译数据库（若使用 idf.py 生成且不希望入库）
 # compile_commands.json
 

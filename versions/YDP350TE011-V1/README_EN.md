@@ -17,7 +17,6 @@
 
 - [Overview](#overview)
 - [Specifications](#specifications)
-- [Sample projects](#sample-projects)
 - [Repository layout](#repository-layout)
 - [Resources](#resources)
 - [Buy](#buy)
@@ -46,16 +45,6 @@ Current module version: **YDP350TE011-V1**. Electrical and mechanical details fo
 
 > Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
 
-## Sample projects
-
-| Description | Path |
-| ---- | ---- |
-| ESP32-P4 · AXS15231E MIPI + LVGL9 | [`examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/`](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/) |
-| ESP32-P4 · AXS15231E MIPI + LVGL9 · PPA landscape | [`examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/`](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/) |
-| Raspberry Pi 5 · AXS15231E 320×480 panel / DT overlay (display only) | [`examples/rpi5-panel-axs15231e-320x480/`](./examples/rpi5-panel-axs15231e-320x480/) |
-| Raspberry Pi 5 · AXS15231E 320×480 panel + touch / DT overlay | [`examples/rpi5-panel-axs15231e-touch-320x480/`](./examples/rpi5-panel-axs15231e-touch-320x480/) |
-| Raspberry Pi 5 · AXS15231E 320×480 LVGL demo | [`examples/rpi5-lvgl-axs15231e-320x480/`](./examples/rpi5-lvgl-axs15231e-320x480/) |
-
 ## Repository layout
 
 ```text
@@ -80,14 +69,6 @@ Current module version: **YDP350TE011-V1**. Electrical and mechanical details fo
 | Driver IC datasheet (AXS15231E) | [`docs/AXS15231E_Datasheet_V0.3.pdf`](./docs/AXS15231E_Datasheet_V0.3.pdf) |
 | Init sequence (text) | [`docs/TM3.5_OSC48MHZ-mipi-888-Video-60HZ.txt`](./docs/TM3.5_OSC48MHZ-mipi-888-Video-60HZ.txt) |
 | RGB timing reference | [`docs/rgb-timing-320x480.png`](./docs/rgb-timing-320x480.png) |
-
-### Samples
-
-- [ESP32-P4 AXS15231E MIPI + LVGL9](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9/)
-- [ESP32-P4 AXS15231E MIPI + LVGL9 · PPA landscape](./examples/esp32p4-idf5_axs15231e-mipi_esp-lvgl-port_lvgl9_ppa/)
-- [Raspberry Pi 5 panel (display only)](./examples/rpi5-panel-axs15231e-320x480/)
-- [Raspberry Pi 5 panel + touch](./examples/rpi5-panel-axs15231e-touch-320x480/)
-- [Raspberry Pi 5 LVGL demo](./examples/rpi5-lvgl-axs15231e-320x480/)
 
 ## Buy
 
